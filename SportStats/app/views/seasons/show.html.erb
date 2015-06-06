@@ -1,0 +1,4 @@
+<% @seasons.each do |season| %>
+	<%= link_to "#{season.name}", team_path("#{season.id}") %>
+	<p>
+<% end %>

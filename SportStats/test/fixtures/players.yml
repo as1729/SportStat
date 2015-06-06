@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  human: 
+  team: 
+  join_date: 2015-05-19
+  depart_date: 2015-05-19
+  reason_for_departure: MyText
+
+two:
+  human: 
+  team: 
+  join_date: 2015-05-19
+  depart_date: 2015-05-19
+  reason_for_departure: MyText

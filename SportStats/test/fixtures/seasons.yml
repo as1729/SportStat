@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  start_date: 2015-05-19
+  end_date: 2015-05-19
+  number_of_teams: 1
+  min_age: 1
+  gender: MyString
+  has_playoffs?: false
+  is_recurring?: false
+  min_players_per_team: 1
+  max_players_per_team: 1
+  league: 
+  sport: 
+
+two:
+  name: MyString
+  start_date: 2015-05-19
+  end_date: 2015-05-19
+  number_of_teams: 1
+  min_age: 1
+  gender: MyString
+  has_playoffs?: false
+  is_recurring?: false
+  min_players_per_team: 1
+  max_players_per_team: 1
+  league: 
+  sport: 

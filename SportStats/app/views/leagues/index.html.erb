@@ -1,0 +1,5 @@
+Welcome to SportStat!
+<p>Select your league below</p>
+<% @leagues.each do |league| %>
+	<%= link_to "#{league.name}", season_path("#{league.id}") %> <p>
+<% end %>

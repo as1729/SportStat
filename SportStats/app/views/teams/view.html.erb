@@ -1,0 +1,4 @@
+Welcome to <%= "#{@team.name}'s page" %>
+<p>
+<%= link_to "Roster", player_path(@team.id) %>
+<%= link_to "Schedule", "/games/#{@team.id}/schedule" %>
