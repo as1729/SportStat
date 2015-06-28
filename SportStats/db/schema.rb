@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150607030416) do
+ActiveRecord::Schema.define(:version => 20150615231220) do
+
+  create_table "games", :force => true do |t|
+    t.integer  "home_team_id"
+    t.integer  "away_team_id"
+    t.integer  "home_team_points"
+    t.integer  "away_team_points"
+    t.integer  "venue_id"
+    t.datetime "date_time"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  add_index "games", ["venue_id"], :name => "index_games_on_venue_id"
 
   create_table "humen", :force => true do |t|
     t.string   "name"
@@ -90,5 +103,15 @@ ActiveRecord::Schema.define(:version => 20150607030416) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "venues", :force => true do |t|
+    t.string   "name"
+    t.string   "street_address"
+    t.string   "city"
+    t.string   "state"
+    t.integer  "zip_code"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
 
 end
